@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clube de Fidelidade Empório Zingaro</title>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght=400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Open Sans', sans-serif;
+            line-height: 1.6;
+            background-color: #f6f6f6;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            background: #ffffff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            font-size: 16px;
+        }
+        .logo {
+            display: block;
+            margin: 0 auto 20px;
+            max-width: 200px;
+            height: auto;
+        }
+        header {
+            text-align: center;
+            background: #003366;
+            color: white;
+            padding: 20px 0;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2em;
+        }
+        header p {
+            margin: 0;
+            font-size: 1.2em;
+        }
+        h2, h3 {
+            color: #003366; /* Adjusted to match the logo color */
+        }
+        .highlight {
+            font-weight: bold;
+        }
+        .highlight_blue { color: #007bff; }
+        .highlight_purple { color: #b846ff; }
+        .highlight_pink { color: #ff00e4; }
+        .highlight_brown { color: #480032; }
+        .highlight_blue_light { color: #608fff; }
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            border-radius: 6px;
+            overflow: hidden;
+            margin-bottom: 20px;
+        }
+        th, td {
+            border: 1px solid #dddddd;
+            padding: 12px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+            font-weight: bold;
+            color: #333;
+        }
+        tr:hover {
+            background-color: #e6f7ff;
+        }
+        .footer {
+            background-color: #f6f6f6;
+            padding: 20px;
+            text-align: center;
+            font-size: 14px;
+            border-top: 1px solid #ddd;
+        }
+        .footer p {
+            margin: 12px 0;
+        }
+        .footer a {
+            color: #333;
+            text-decoration: none;
+        }
+        .footer a:hover {
+            text-decoration: underline;
+        }
+        .social-media {
+            text-align: center;
+            margin-bottom: 18px;
+        }
+        .social-media a {
+            display: inline-block;
+            margin: 0 10px;
+        }
+        .social-media img {
+            width: 24px;
+            height: 24px;
+        }
+        .footer-icon {
+            vertical-align: middle;
+            margin-right: 5px;
+            width: 24px;
+            height: 24px;
+        }
+        .code {
+            background-color: #f5f5f5;
+            padding: 2px 4px;
+            border-radius: 4px;
+            font-family: monospace;
+        }
+        .accordion {
+            cursor: pointer;
+            padding: 18px;
+            width: 100%;
+            border: none;
+            text-align: left;
+            outline: none;
+            font-size: 18px;
+            transition: 0.4s;
+            background-color: #f2f2f2;
+        }
+        .accordion:after {
+            content: '\002B'; /* Unicode character for "plus" sign (+) */
+            color: #777;
+            font-weight: bold;
+            float: right;
+            margin-left: 5px;
+        }
+        .accordion.active:after {
+            content: "\2212"; /* Unicode character for "minus" sign (-) */
+        }
+        .panel {
+            padding: 0 18px;
+            display: none;
+            background-color: white;
+            overflow: hidden;
+        }
+        @media only screen and (max-width: 600px) {
+            .container {
+                padding: 20px;
+                font-size: 14px;
+            }
+            th, td {
+                padding: 10px;
+                font-size: 14px;
+            }
+        }
+        .back-to-top {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background: #003366; /* Adjusted to match the headings color */
+            color: white;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%; /* Make the button round */
+            text-align: center;
+            cursor: pointer;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            font-size: 2em; /* Increased the arrow size */
+            line-height: 50px; /* Center the arrow vertically */
+        }
+        .back-to-top:hover {
+            background: #002244;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="assets/logo.png" alt="Empório Zingaro Logo" class="logo">
+<!--        <h1>Clube de Fidelidade Empório Zingaro</h1> -->
+<!--        <p>Benefícios exclusivos e transparência total.</p> -->
+    </header>
+    
+    <div class="container">
+        <h2>Bem-vindo ao Clube de Fidelidade do Empório Zingaro</h2>
+        <p>O Clube de Fidelidade do Empório Zingaro é uma iniciativa exclusiva, desenvolvida internamente para proporcionar benefícios únicos e alinhados às necessidades dos nossos clientes. Como o programa é feito in-house, podemos garantir que seus dados pessoais não são compartilhados com terceiros. Além disso, o código que gerencia nosso programa é open source e está disponível no nosso <a href="https://github.com/EmporioZingaro">GitHub</a>, o que reforça a transparência e a confiança em nossos processos. Desenvolver o programa internamente nos permite criar regras e benefícios que se adaptam perfeitamente tanto às necessidades do Empório Zingaro quanto aos desejos de nossos clientes, oferecendo uma experiência personalizada e vantajosa.</p>
+        
+        <h2>Inscrição e Participação</h2>
+        <p>Para participar do Clube de Fidelidade, basta fazer seu cadastro pessoalmente com qualquer um dos nossos funcionários. Os dados essenciais para validar seu cadastro são nome e CPF. Caso queira receber atualizações periódicas sobre o clube, informe também seu endereço de e-mail. Não há prazo mínimo para participação. Mesmo que você faça o cadastro e uma compra no último dia do trimestre, ainda receberá o cashback referente a essa compra no trimestre seguinte.</p>
+
+        <h2>Periodicidade do Programa</h2>
+        <p>Nosso clube de fidelidade funciona em ciclos trimestrais. Cada ciclo tem a duração de três meses, durante os quais você acumula pontos e se classifica em uma das categorias do programa. No final de cada ciclo, seus pontos são zerados. Os benefícios dependem da categoria que você alcançou no último trimestre. Dessa forma, você passa um trimestre acumulando pontos para classificação e ao mesmo tempo usufruindo dos benefícios do trimestre anterior.</p>
+
+        <h2>Como Funciona o Cashback</h2>
+        <p>No Empório Zingaro, o cashback é uma das principais vantagens do nosso Clube de Fidelidade. O clube opera em ciclos trimestrais, onde você acumula cashback durante um trimestre e deve utilizá-lo no próximo trimestre. Para usar seu cashback, basta realizar uma compra mínima de R$30 e informar seu nome. Lembre-se de que o valor do cashback não pode corresponder a mais de 30% do valor final da compra. O cashback expira ao final do trimestre seguinte ao seu acúmulo, então é importante planejar suas compras para aproveitá-lo ao máximo.</p>
+
+        <h2>Categorias do Clube de Fidelidade</h2>
+        <p>Nosso clube de fidelidade possui várias categorias, cada uma oferecendo uma porcentagem diferente de cashback:</p>
+        <ul>
+            <li><strong>Top1:</strong> 20% de cashback</li>
+            <li><strong>Top3:</strong> 15% de cashback</li>
+            <li><strong>Top5:</strong> 10% de cashback</li>
+            <li><strong>Top10:</strong> 7% de cashback</li>
+            <li><strong>Platina:</strong> 5% de cashback</li>
+            <li><strong>Ouro:</strong> 4% de cashback</li>
+            <li><strong>Prata:</strong> 3% de cashback</li>
+            <li><strong>Bronze:</strong> 2% de cashback</li>
+        </ul>
+
+        <h2>Sistema de Pontuação</h2>
+        <p>O sistema de pontuação do Empório Zingaro é projetado para recompensar sua fidelidade de forma justa e transparente. Veja como funciona:</p>
+        <p>Para cada R$1 em compras, você ganha 0.42069 pontos. Sua classificação no final de cada ciclo depende do total de pontos acumulados. As categorias são determinadas da seguinte forma:</p>
+        <ul>
+            <li><strong>Top1:</strong> O cliente com o maior número de pontos.</li>
+            <li><strong>Top3:</strong> Os três clientes com mais pontos, excluindo o Top1.</li>
+            <li><strong>Top5:</strong> Os cinco clientes com mais pontos, excluindo os Top3.</li>
+            <li><strong>Top10:</strong> Os dez clientes com mais pontos, excluindo os Top5.</li>
+            <li><strong>Platina:</strong> Os 40% dos clientes com mais pontos.</li>
+            <li><strong>Ouro:</strong> Os próximos 30% dos clientes com mais pontos.</li>
+            <li><strong>Prata:</strong> Os próximos 20% dos clientes com mais pontos.</li>
+            <li><strong>Bronze:</strong> Os 10% restantes dos clientes.</li>
+        </ul>
+
+        <h2>Regras do Programa de Fidelidade</h2>
+        <p>Para garantir uma experiência justa e equilibrada, estabelecemos algumas regras importantes:</p>
+        <ul>
+            <li>Compras feitas com desconto não acumulam pontos.</li>
+            <li>Compras feitas com vale alimentação/refeição não acumulam pontos.</li>
+            <li>O valor mínimo para utilizar o cashback é de R$30.</li>
+            <li>O valor do cashback não pode exceder 30% do valor final da compra.</li>
+            <li>Pontos acumulados durante um ciclo expiram ao final do mesmo ciclo.</li>
+        </ul>
+
+        <h2>Benefícios Adicionais</h2>
+        <p>Os benefícios dependem da categoria que você alcançou no último trimestre. Abaixo estão listados os benefícios adicionais exclusivos para as categorias Ouro, Platina e todos os níveis Top:</p>
+        <ul>
+            <li><strong>Clientes Ouro e Platina:</strong> Podem comprar bebidas alcoólicas em qualquer horário de funcionamento do Empório.</li>
+            <li><strong>Clientes Top (Top1, Top3, Top5 e Top10):</strong> Além de poderem comprar bebidas alcoólicas em qualquer horário, também têm acesso a um serviço VIP durante a madrugada.</li>
+        </ul>
+
+        <h2>Acompanhamento de Pontos e Cashback</h2>
+        <p>Após cada compra, você receberá um e-mail detalhado com o número de pontos acumulados e sua posição no ranking da temporada atual. No final de cada ciclo trimestral, enviamos um e-mail com um resumo completo do seu histórico de compras, total de pontos acumulados, cashback recebido e a categoria alcançada. Não possuímos site ou aplicativo para acompanhamento em tempo real.</p>
+
+        <h2>Perguntas Frequentes</h2>
+
+        <button class="accordion">Achei tudo isso muito confuso... pode resumir por favor?</button>
+        <div class="panel">
+            <p>Claro! O papel do cliente é continuar comprando e frequentando o Empório Zingaro normalmente. Nosso sistema foi desenvolvido in-house e pensado para facilitar sua experiência, então você não precisa fazer nada além de registrar suas compras no seu CPF. No final do trimestre, você receberá um e-mail informando quanto cashback acumulou para gastar no próximo trimestre. Nossos funcionários estarão à disposição para orientá-lo sobre como utilizar seu cashback.</p>
+        </div>
+
+        <button class="accordion">No email que recebo a cada compra percebi que os pontos necessários para avançar de categoria sempre mudam. Por que isso acontece?</button>
+        <div class="panel">
+            <p>À medida que nossos clientes fazem mais compras durante o trimestre, o número total de pontos acumulados aumenta. Como o sistema de classificação é baseado na distribuição percentual de pontos entre todos os clientes, você pode precisar de mais pontos para avançar de categoria conforme o trimestre avança e mais pontos são acumulados por todos. Esses pontos são calculados em tempo real, e a tendência é que a quantidade de pontos para avançar de categoria aumente durante o trimestre. Quanto mais perto do fim do trimestre, mais estável fica a quantidade de pontos necessária para avançar.</p>
+        </div>
+
+        <button class="accordion">Existe algum limite máximo de cashback que pode ser acumulado em um trimestre?</button>
+        <div class="panel">
+            <p>Não, não existe um limite máximo para o cashback acumulado.</p>
+        </div>
+
+        <button class="accordion">O que é o multiplicador de pontos e ele será sempre o mesmo?</button>
+        <div class="panel">
+            <p>O multiplicador de pontos é um valor utilizado para calcular quantos pontos você ganha por cada real gasto. Em condições normais, o multiplicador é 0.42069 pontos por R$1. No entanto, em promoções e eventos especiais, esse multiplicador pode aumentar. Essas promoções serão divulgadas em nossas mídias sociais.</p>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="social-media">
+            <a href="#"><img src="assets/instagram.png" alt="Instagram" class="footer-icon"></a>
+            <a href="#"><img src="assets/github.png" alt="GitHub" class="footer-icon"></a>
+        </div>
+        <p><a href="tel:+5561996410175"><img src="assets/phone.png" alt="Phone" class="footer-icon">+55 (61) 99641-0175</a></p>
+        <p><a href="mailto:sac@emporiozingaro.com"><img src="assets/email.png" alt="Email" class="footer-icon">sac@emporiozingaro.com</a></p>
+        <p><a href="https://maps.app.goo.gl/irqng1cV7ZcCBmcRA" target="_blank"><img src="assets/maps.png" alt="Maps" class="footer-icon">CLN 316, Bloco E, Loja 2 - Asa Norte - Brasília</a></p>
+    </div>
+
+    <div class="back-to-top" onclick="scrollToTop()">
+        ↑
+    </div>
+
+    <script>
+        function scrollToTop() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+
+        // Collapsible Accordion
+        var acc = document.getElementsByClassName("accordion");
+        for (var i = 0; i < acc.length; i++) {
+            acc[i].addEventListener("click", function() {
+                this.classList.toggle("active");
+                var panel = this.nextElementSibling;
+                if (panel.style.display === "block") {
+                    panel.style.display = "none";
+                } else {
+                    panel.style.display = "block";
+                }
+            });
+        }
+    </script>
+</body>
+</html>
